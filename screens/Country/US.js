@@ -19,7 +19,7 @@ const US = ({ navigation }) => {
     } */
 
     function getNewsFromAPI() {
-        newAPI.get('top-headlines?country=us&apiKey=920deb9f754348c0bec4871fef36d971')
+        newAPI.get('tweets')
         .then(async function(response){
             setNewsTech(response.data)
         })
